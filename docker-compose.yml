@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  batfish:
+    image: batfish/batfish:2024.1.0
+    ports:
+      - "9997:9997"
+      - "9996:9996"
+    volumes:
+      - ./batfish-snapshots:/var/batfish
+    environment:
+      JAVA_OPTS: "-Xmx4g"
+
+  suzieq:
+    image: netenglabs/suzieq:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./suzieq-data:/home/suzieq/data
+    environment:
+      SUZIEQ_DATA_DIR: /home/suzieq/data
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlflow-data:/mlflow
+    command: mlflow server --backend-store-uri sqlite:////mlflow/mlflow.db --default-artifact-root /mlflow/artifacts --host 0.0.0.0

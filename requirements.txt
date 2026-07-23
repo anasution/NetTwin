@@ -1,0 +1,31 @@
+# Core simulation
+networkx>=3.0
+pydantic>=2.0
+click>=8.0
+PyYAML>=6.0
+ipaddress>=1.0.23
+
+# SSH scraper
+paramiko>=3.0
+asyncsh>=2.14
+aiofiles>=23.0
+tenacity>=8.0
+
+# Batfish integration
+pybatfish>=2024.1.0
+
+# SuzieQ integration
+suzieq>=0.21.0
+
+# AIOps
+scikit-learn>=1.4
+prophet>=1.1
+pandas>=2.0
+mlflow>=2.0
+shap>=0.45
+pyarrow>=14.0
+
+# Utilities
+rich>=13.0
+tabulate>=0.9
+deepdiff>=6.0

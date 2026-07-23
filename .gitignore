@@ -1,0 +1,63 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Claude Code
+.claude/
+
+# Session logs
+ndt-session.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ndt-env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MLflow
+mlflow-data/
+mlflow.db
+
+# SuzieQ data
+suzieq-data/
+
+# Batfish snapshots
+batfish-snapshots/
+
+# Temporary files
+*.tmp
+*.log
