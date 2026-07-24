@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wsl *)",
+      "Bash(python3 *)",
+      "Bash(curl -s https://api.github.com/repos/anasution/NetTwin)",
+      "mcp__github__create_repository",
+      "mcp__github__push_files",
+      "Bash(git config *)",
+      "Bash(git credential *)",
+      "Bash(git push *)",
+      "mcp__github__create_or_update_file"
+    ]
+  }
+}
